@@ -2,11 +2,7 @@
 
 ***/dist
 
-**/package-lock.json
-
 ***/.tmp
-
-***/.nuxt
 
 ***/.cache
 .vscode
