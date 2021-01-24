@@ -304,7 +304,7 @@ const request = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
   request.interceptors.response.use(function (response) {
     // Any status code that lie within the range of 2xx cause this function to trigger
     // Do something with response data
-    return response.data;
+    return response.data ? response.data : response;
   }, function (error) {
     var _error$response;
 
