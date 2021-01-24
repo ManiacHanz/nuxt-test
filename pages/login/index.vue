@@ -53,7 +53,7 @@ const Cookie = process.client ? require("js-cookie") : undefined;
 
 export default {
   name: "Login",
-  middleware: "notAuth",
+  middleware: ["notAuth"],
   // async asyncData(context) {
   //   // console.log(context);
   //   const { route } = context;

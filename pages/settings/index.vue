@@ -63,6 +63,7 @@ import { updateUser, getUser } from "@/api/auth";
 const Cookie = process.client ? require("js-cookie") : undefined;
 export default {
   name: "Settings",
+  middleware: ["auth"],
   data() {
     return {
       user: {

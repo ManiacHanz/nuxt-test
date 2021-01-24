@@ -71,6 +71,7 @@ const MarkdownIt = require("markdown-it");
 export default {
   name: "ArticleDetail",
   components: { ArticleMeta },
+  middleware: ['auth'],
   async asyncData({ route }) {
     const {
       params: { slug }

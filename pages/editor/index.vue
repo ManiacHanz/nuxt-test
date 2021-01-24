@@ -46,6 +46,7 @@
 import { submitArticle, getArticle } from "@/api/article";
 export default {
   name: "Editor",
+  middleware: ["auth"],
   data() {
     return {
       title: "",
